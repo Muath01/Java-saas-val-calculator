@@ -14,7 +14,9 @@ class userInputDemo{
         System.out.print("What is your Renewal Rate: ");
         int renewal = sc.nextInt();
 
-        System.out.println(arr * growth * 10 * renewal);
+        int value = arr * (growth / 100) * 10 * (renewal /100);
+
+        System.out.println(value);
 
         /*
         var value = revenue.value * (growth.value / 100) * 10 * (renewal.value / 100)
