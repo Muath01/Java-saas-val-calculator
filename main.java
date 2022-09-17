@@ -1,34 +1,19 @@
 import java.util.*;
 
+public class main{
 
-class userInputDemo{
+    public static void main(String[] args){
 
-    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("What is your ARR: ");
-        int arr = sc.nextInt();
-        System.out.print("What is your growth rate: ");
-        int growth = sc.nextInt();
-        System.out.print("What is your Renewal Rate: ");
-        int renewal = sc.nextInt();
-
-        int value = arr * (growth / 100) * 10 * (renewal /100);
-
-        System.out.println(value);
-
-        /*
-        var value = revenue.value * (growth.value / 100) * 10 * (renewal.value / 100)
-
-        value =  Math.round((value + Number.EPSILON) * 100) /100;
-        value = value.toLocaleString("en-US")
-        */
-// ARR x growth x 10 x renewal rate
-
+        Scanner sc=new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i = 1; i <=10; i++){
+            System.out.printf("%d x %d = %d\n", N,i, N * i);
+//
+        }
 
     }
-
-
 }
+
+// This is able to feel the way
 
