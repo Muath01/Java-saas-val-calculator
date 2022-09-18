@@ -5,12 +5,25 @@ public class main{
     public static void main(String[] args){
 
 
-        Scanner sc=new Scanner(System.in);
-        int N = sc.nextInt();
-        for(int i = 1; i <=10; i++){
-            System.out.printf("%d x %d = %d\n", N,i, N * i);
-//
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+
+            for(int k=0;k<n;k++){
+                a+=b;
+                if(k>0)
+                    System.out.print(" ");
+                System.out.print(a);
+
+                b=b*2;
+
+            }
         }
+        // 5 + 3(1), 5 + 3(2), 5 + 3(3), 5 + 3(4), 5 + 3(5)
+        in.close();
 
     }
 }
